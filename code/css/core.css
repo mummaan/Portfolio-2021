@@ -1,0 +1,84 @@
+/* Scss Document */
+@import url("https://use.typekit.net/syc5cps.css");
+/************************* Universal CSS ****************************/
+.site-wrapper {
+  position: relative;
+  overflow-x: hidden; }
+
+.bg-jade {
+  background-color: #004235; }
+
+.bg-lttan {
+  background-color: #FBECDF; }
+
+.bg-lt {
+  background-color: #FEF6EF; }
+
+h1 {
+  font-family: imact, ivypresto-headline, serif;
+  font-size: 3rem; }
+
+p {
+  font-family: acumin-pro-wide, sans-serif; }
+
+/* PADDING SETTINGS */
+.pt-std {
+  padding-top: 80px !important; }
+
+/* Vertical Heights */
+.vh-80 {
+  height: 70vh !important; }
+
+/* Border Radius */
+.br-bottom {
+  border-radius: 0 0 10% 10%; }
+
+/* Z INDEXES */
+.z-2 {
+  z-index: 2; }
+
+.z-3 {
+  z-index: 3; }
+
+/************************* Mobile ****************************/
+.img-brand {
+  height: auto;
+  width: 12%; }
+
+.navbar-toggler {
+  border: none; }
+
+#h1homepage-top {
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #004235;
+  -webkit-text-fill-color: #FBECDF;
+  font-size: 6rem;
+  padding-bottom: 2%;
+  text-align: left;
+  padding-left: 5%;
+  line-height: 3rem; }
+
+#h1homepage-bottom {
+  color: #004235;
+  font-size: 6rem;
+  padding-bottom: 2%;
+  text-align: right;
+  padding-right: 5%;
+  line-height: 3rem; }
+
+#homepage-tagline {
+  color: #004235;
+  text-transform: lowercase;
+  text-align: center;
+  padding-top: 5%;
+  font-size: 1.25rem; }
+
+.palm {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  z-index: 1; }
+
+.palm-img {
+  height: 400px;
+  width: auto; }

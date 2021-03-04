@@ -1,0 +1,139 @@
+/* Scss Document */
+
+//Typekit
+@import url("https://use.typekit.net/syc5cps.css");
+
+/************************* Universal CSS ****************************/
+
+$header: imact, ivypresto-headline, serif;
+$body: acumin-pro-wide, sans-serif;
+
+.site-wrapper {
+	position: relative;
+	overflow-x: hidden;
+}
+
+
+//Colors
+$jade: #004235;
+$lt-tan: #FBECDF;
+$light: #FEF6EF;
+
+
+//Backgrounds
+.bg-jade{
+	background-color: $jade;
+}
+
+.bg-lttan{
+	background-color: $lt-tan;
+}
+
+.bg-lt{
+	background-color: $light;
+}
+
+
+//Fonts
+h1 {
+	font-family: $header;
+	font-size: 3rem;
+}
+
+p {
+	font-family: $body;
+}
+
+
+
+/* PADDING SETTINGS */
+.pt-std{
+	padding-top: 80px!important;
+}
+
+
+/* Vertical Heights */
+.vh-80{
+	height: 70vh!important;
+}
+
+
+/* Border Radius */
+
+// Bottom Corners
+.br-bottom{
+	border-radius: 0 0 10% 10%;
+}
+
+
+
+/* Z INDEXES */
+
+.z-2{
+	z-index: 2;
+}
+
+.z-3{
+	z-index: 3;
+}
+
+
+
+/************************* Mobile ****************************/
+
+//Navbar
+
+.img-brand{
+	height: auto;
+	width: 12%;
+}
+
+.navbar-toggler{
+	border: none;
+}
+
+#h1homepage-top {
+	-webkit-text-stroke-width: 1.5px;
+  	-webkit-text-stroke-color: $jade;
+	-webkit-text-fill-color: $lt-tan;
+	font-size: 6rem;
+	padding-bottom: 2%;
+	text-align: left;
+	padding-left: 5%;
+	line-height: 3rem;
+}
+
+#h1homepage-bottom {
+	color: $jade;
+	font-size: 6rem;
+	padding-bottom: 2%;
+	text-align: right;
+	padding-right: 5%;
+	line-height: 3rem;
+}
+
+
+#homepage-tagline{
+	color: $jade;
+	text-transform: lowercase;
+	text-align: center;
+	padding-top: 5%;
+	font-size: 1.25rem;
+}
+
+
+.palm {
+	position: absolute;
+	top: 25%;
+	left: 40%;
+	z-index: 1;
+}
+
+.palm-img{
+	height: 400px;
+	width: auto;
+}
+
+
+
+
