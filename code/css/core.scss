@@ -54,7 +54,7 @@ p {
 
 /* Vertical Heights */
 .vh-80{
-	height: 70vh!important;
+	height: 80vh!important;
 }
 
 
@@ -85,7 +85,7 @@ p {
 
 .img-brand{
 	height: auto;
-	width: 12%;
+	width: 42px;
 }
 
 .navbar-toggler{
@@ -96,19 +96,17 @@ p {
 	-webkit-text-stroke-width: 1.5px;
   	-webkit-text-stroke-color: $jade;
 	-webkit-text-fill-color: $lt-tan;
-	font-size: 6rem;
+	font-size: 5rem;
 	padding-bottom: 2%;
-	text-align: left;
-	padding-left: 5%;
+	text-align: center;
 	line-height: 3rem;
 }
 
 #h1homepage-bottom {
 	color: $jade;
-	font-size: 6rem;
+	font-size: 5rem;
 	padding-bottom: 2%;
-	text-align: right;
-	padding-right: 5%;
+	text-align: center;
 	line-height: 3rem;
 }
 
