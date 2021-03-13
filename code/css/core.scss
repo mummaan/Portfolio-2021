@@ -15,35 +15,62 @@ $body: acumin-pro-wide, sans-serif;
 
 
 //Colors
-$jade: #004235;
-$lt-tan: #FBECDF;
-$light: #FEF6EF;
-
+$white: #FFF;
+$dark: #655560;
+$lt-accent: #FFF5ED;
+$accent: #FFCCB8;
+$dk-accent: #A45B5D;
 
 //Backgrounds
-.bg-jade{
-	background-color: $jade;
-}
 
-.bg-lttan{
-	background-color: $lt-tan;
+.bg-white{
+	background-color: $white;
 }
 
 .bg-lt{
-	background-color: $light;
+	background-color: $lt-accent;
 }
 
 
 //Fonts
-h1 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: $header;
+}
+
+p, li, a, span, button{
+	font-family: $body;
+	font-weight: 300;
+}
+
+h1 {
 	font-size: 3rem;
 }
 
-p {
-	font-family: $body;
+h2 {
+	font-size: 2rem;
 }
 
+h3 {
+	font-size: 1.75rem;
+}
+
+a {
+	color: $dk-accent;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.badge{
+	font-size: .75rem;
+	font-weight: 400;
+}
+
+.btn {
+	font-weight: 400;
+}
 
 
 /* PADDING SETTINGS */
@@ -52,17 +79,23 @@ p {
 }
 
 
+/*  MARGIN SETTINGS */
+.mt-54{
+	margin-top: 54px;
+}
+
+
 /* Vertical Heights */
 .vh-80{
 	height: 80vh!important;
 }
 
+.vh-10{
+	height: 10vh!important;
+}
 
-/* Border Radius */
-
-// Bottom Corners
-.br-bottom{
-	border-radius: 0 0 10% 10%;
+.vh-5{
+	height: 5vh!important;
 }
 
 
@@ -85,53 +118,98 @@ p {
 
 .img-brand{
 	height: auto;
-	width: 42px;
+	width: 28px;
+	fill: $dk-accent;
 }
 
 .navbar-toggler{
 	border: none;
 }
 
-#h1homepage-top {
-	-webkit-text-stroke-width: 1.5px;
-  	-webkit-text-stroke-color: $jade;
-	-webkit-text-fill-color: $lt-tan;
-	font-size: 5rem;
-	padding-bottom: 2%;
-	text-align: center;
-	line-height: 3rem;
-}
-
-#h1homepage-bottom {
-	color: $jade;
-	font-size: 5rem;
-	padding-bottom: 2%;
-	text-align: center;
-	line-height: 3rem;
+.navbar-name{
+	font-family: $header;
+	font-size: 1.5rem;
+	color: $dk-accent
 }
 
 
-#homepage-tagline{
-	color: $jade;
-	text-transform: lowercase;
-	text-align: center;
-	padding-top: 5%;
-	font-size: 1.25rem;
+//Cards
+
+.portfolio-card{
+	margin-top: 10%;
+	border-radius: 0%;
+}
+
+.card-img-top{
+	border-radius: 0;
+}
+
+.bg-cardbadge{
+	background-color: $lt-accent;
+	color: $dark;
+}
+
+.card-footer{
+	background-color: $lt-accent;
+	color: $dk-accent;
+	height: 50px;
+	border-top: none;
+}
+
+.icon-list{
+	width: 30px;
+}
+
+.link-icon{
+	font-size: 1rem;
+}
+
+//Footer
+.footer{
+	margin-top: 60px;
+	li{
+		display: inline!important;
+		padding: 5px;
+	}
+}
+
+//Portfolio Page
+//Header
+.label{
+	color: $dark;
+	font-weight: 600;
+}
+
+.info{
+	color: $dk-accent;
+	font-weight: 300;
 }
 
 
-.palm {
-	position: absolute;
-	top: 25%;
-	left: 40%;
-	z-index: 1;
+//Body
+
+.port-number{
+	color: $dk-accent;
+	font-size: 1rem;
+	font-weight: 600;
 }
 
-.palm-img{
-	height: 400px;
-	width: auto;
+.pullquote{
+	font-family: $header;
+	color: $dk-accent;
+	font-size: 1.5rem;
 }
 
+.quote{
+	border: 2px $accent;
+	width: 100%;
+}
 
-
+.port-item {
+	background-color: $lt-accent;
+	font-weight: 200;
+	font-size: 1.75rem;
+	color: $dk-accent;
+	border: 1px solid $dk-accent;
+}
 
