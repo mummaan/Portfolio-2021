@@ -16,13 +16,14 @@ h1, h2, h3, h4, h5, h6 {
 
 p, li, a, span, button {
   font-family: acumin-pro-wide, sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  font-size: 2rem; }
 
 h1 {
   font-size: 3rem; }
 
 h2 {
-  font-size: 2rem; }
+  font-size: 4rem; }
 
 h3 {
   font-size: 1.75rem; }
@@ -35,11 +36,13 @@ ul {
   padding-left: 0; }
 
 .badge {
-  font-size: .75rem;
+  font-size: 1.75rem;
   font-weight: 400; }
 
 .btn {
   font-weight: 400; }
+  .btn i {
+    font-size: 2rem; }
 
 /* PADDING SETTINGS */
 .pt-std {
@@ -47,7 +50,7 @@ ul {
 
 /*  MARGIN SETTINGS */
 .mt-54 {
-  margin-top: 54px; }
+  margin-top: 174px; }
 
 /* Vertical Heights */
 .vh-80 {
@@ -69,16 +72,23 @@ ul {
 /************************* Mobile ****************************/
 .img-brand {
   height: auto;
-  width: 28px;
-  fill: #A45B5D; }
+  width: 60px;
+  fill: #A45B5D;
+  margin: 25px; }
 
 .navbar-toggler {
   border: none; }
 
 .navbar-name {
   font-family: imact, ivypresto-headline, serif;
-  font-size: 1.5rem;
-  color: #A45B5D; }
+  font-size: 3.25rem;
+  color: #655560; }
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(164,91,93,1.00)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+  width: 60px;
+  height: 60px;
+  margin: 25px; }
 
 .portfolio-card {
   margin-top: 10%;
@@ -93,9 +103,14 @@ ul {
 
 .card-footer {
   background-color: #FFF5ED;
+  height: auto;
+  border-top: none;
+  font-size: 2.5rem;
+  padding: 25px; }
+
+.footer-cta {
   color: #A45B5D;
-  height: 50px;
-  border-top: none; }
+  font-size: 2.5rem; }
 
 .icon-list {
   width: 30px; }

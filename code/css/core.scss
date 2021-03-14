@@ -40,6 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 p, li, a, span, button{
 	font-family: $body;
 	font-weight: 300;
+	font-size: 2rem;
 }
 
 h1 {
@@ -47,7 +48,7 @@ h1 {
 }
 
 h2 {
-	font-size: 2rem;
+	font-size: 4rem;
 }
 
 h3 {
@@ -64,12 +65,15 @@ ul {
 }
 
 .badge{
-	font-size: .75rem;
+	font-size: 1.75rem;
 	font-weight: 400;
 }
 
 .btn {
 	font-weight: 400;
+	i{
+		font-size: 2rem;
+	}
 }
 
 
@@ -81,7 +85,7 @@ ul {
 
 /*  MARGIN SETTINGS */
 .mt-54{
-	margin-top: 54px;
+	margin-top: 174px;
 }
 
 
@@ -118,8 +122,9 @@ ul {
 
 .img-brand{
 	height: auto;
-	width: 28px;
+	width: 60px;
 	fill: $dk-accent;
+	margin: 25px;
 }
 
 .navbar-toggler{
@@ -128,8 +133,15 @@ ul {
 
 .navbar-name{
 	font-family: $header;
-	font-size: 1.5rem;
-	color: $dk-accent
+	font-size: 3.25rem;
+	color: $dark;
+}
+
+.navbar-toggler-icon {
+  	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(164,91,93,1.00)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
+  	width: 60px;
+	height: 60px;
+	margin: 25px;
 }
 
 
@@ -139,6 +151,7 @@ ul {
 	margin-top: 10%;
 	border-radius: 0%;
 }
+
 
 .card-img-top{
 	border-radius: 0;
@@ -151,9 +164,15 @@ ul {
 
 .card-footer{
 	background-color: $lt-accent;
-	color: $dk-accent;
-	height: 50px;
+	height: auto;
 	border-top: none;
+	font-size: 2.5rem;
+	padding: 25px;
+}
+
+.footer-cta{
+	color: $dk-accent;
+	font-size: 2.5rem;
 }
 
 .icon-list{
