@@ -2,8 +2,9 @@
 @import url("https://use.typekit.net/syc5cps.css");
 /************************* Universal CSS ****************************/
 .site-wrapper {
+  overflow-x: hidden;
   position: relative;
-  overflow-x: hidden; }
+  min-height: 100vh; }
 
 .bg-white {
   background-color: #FFF; }
@@ -11,22 +12,31 @@
 .bg-lt {
   background-color: #FFF5ED; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
   font-family: imact, ivypresto-headline, serif; }
 
-p, li, a, span, button {
+p, li, a, button {
   font-family: acumin-pro-wide, sans-serif;
   font-weight: 300;
   font-size: 2rem; }
 
 h1 {
-  font-size: 3rem; }
+  font-size: 6rem; }
 
 h2 {
   font-size: 4rem; }
 
 h3 {
-  font-size: 1.75rem; }
+  font-size: 3rem; }
+
+h4 {
+  font-family: acumin-pro-wide, sans-serif;
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 3rem; }
+
+.h3 {
+  font-size: 3rem; }
 
 a {
   color: #A45B5D; }
@@ -35,22 +45,43 @@ ul {
   list-style: none;
   padding-left: 0; }
 
+.bold {
+  font-weight: 600; }
+
 .badge {
   font-size: 1.75rem;
   font-weight: 400; }
 
 .btn {
-  font-weight: 400; }
-  .btn i {
-    font-size: 2rem; }
+  font-weight: 500;
+  padding: 20px; }
+
+.cta {
+  background-color: #A45B5D;
+  font-size: 2rem;
+  color: #FFF; }
+  .cta i {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 15px;
+    margin-top: -5px; }
+
+.txt-accent {
+  color: #A45B5D; }
+
+.txt-header {
+  font-family: imact, ivypresto-headline, serif; }
 
 /* PADDING SETTINGS */
-.pt-std {
-  padding-top: 80px !important; }
+.p-std {
+  padding: 10%; }
 
 /*  MARGIN SETTINGS */
 .mt-54 {
   margin-top: 174px; }
+
+.mt-34 {
+  margin-top: 134px; }
 
 /* Vertical Heights */
 .vh-80 {
@@ -90,6 +121,18 @@ ul {
   height: 60px;
   margin: 25px; }
 
+.nav-item {
+  height: 100px; }
+
+.nav-link {
+  font-size: 2.25rem !important; }
+
+.nav-link.active {
+  font-weight: 600; }
+
+.clean-link {
+  text-decoration: none; }
+
 .portfolio-card {
   margin-top: 10%;
   border-radius: 0%; }
@@ -116,13 +159,29 @@ ul {
   width: 30px; }
 
 .link-icon {
-  font-size: 1rem; }
+  font-size: 3rem;
+  margin-left: 15px;
+  display: inline-block;
+  vertical-align: middle; }
 
 .footer {
-  margin-top: 60px; }
+  background-color: #FFF5ED;
+  padding: 5%; }
   .footer li {
-    display: inline !important;
-    padding: 5px; }
+    padding: 15px;
+    font-weight: 600 !important;
+    color: #A45B5D; }
+
+.footer-sticky {
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+#email-link {
+  font-weight: 600 !important; }
+
+.mb-200 {
+  margin-bottom: 200px; }
 
 .label {
   color: #655560;
@@ -134,13 +193,15 @@ ul {
 
 .port-number {
   color: #A45B5D;
-  font-size: 1rem;
-  font-weight: 600; }
+  font-size: 2rem;
+  font-weight: 200;
+  margin-left: -7%; }
 
 .pullquote {
   font-family: imact, ivypresto-headline, serif;
   color: #A45B5D;
-  font-size: 1.5rem; }
+  font-size: 3.5rem;
+  padding: 5%; }
 
 .quote {
   border: 2px #FFCCB8;
@@ -149,6 +210,70 @@ ul {
 .port-item {
   background-color: #FFF5ED;
   font-weight: 200;
-  font-size: 1.75rem;
+  font-size: 2.5rem;
   color: #A45B5D;
   border: 1px solid #A45B5D; }
+
+.skill-item {
+  font-family: acumin-pro-wide, sans-serif;
+  color: #655560;
+  font-size: 2.75rem;
+  font-weight: 200; }
+
+.skill-icon {
+  font-size: 6rem;
+  padding-right: 50px;
+  color: #655560; }
+
+.skill-row {
+  height: 150px; }
+
+.exp-item {
+  font-size: 2.5rem;
+  font-family: acumin-pro-wide, sans-serif;
+  border-left: 3px solid #A45B5D;
+  height: 150px;
+  display: inline-flex;
+  line-height: 2rem;
+  vertical-align: top; }
+
+.exp-item-last {
+  font-size: 2.5rem;
+  font-family: acumin-pro-wide, sans-serif;
+  height: 150px;
+  display: inline-flex;
+  line-height: 2rem;
+  vertical-align: top; }
+
+.exp-icon {
+  margin-left: -25px;
+  font-size: 3rem;
+  margin-top: -5px;
+  color: #A45B5D;
+  margin-right: 30px; }
+
+.location-txt, .exp-text {
+  font-size: 2rem;
+  vertical-align: top;
+  line-height: 2rem; }
+
+.location-txt {
+  font-style: italic;
+  color: #655560; }
+
+.exp-text {
+  padding-right: 30px;
+  font-weight: 600;
+  font-size: 2.5rem; }
+
+.mail-link {
+  font-family: imact, ivypresto-headline, serif;
+  font-size: 3.5rem;
+  color: #A45B5D; }
+  .mail-link i {
+    font-size: 3rem;
+    padding-right: 15px; }
+
+.icon-link {
+  font-size: 2.5rem;
+  text-decoration: underline; }
