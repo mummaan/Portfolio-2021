@@ -133,6 +133,17 @@ ul {
 .clean-link {
   text-decoration: none; }
 
+.caption {
+  font-style: italic;
+  font-size: 1.75rem; }
+
+.help-icon {
+  font-size: 2rem;
+  padding-right: 10px; }
+
+.help-table {
+  margin-left: 0px; }
+
 .portfolio-card {
   margin-top: 10%;
   border-radius: 0%; }
@@ -153,7 +164,9 @@ ul {
 
 .footer-cta {
   color: #A45B5D;
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  text-align: left;
+  padding-left: 30px; }
 
 .icon-list {
   width: 30px; }

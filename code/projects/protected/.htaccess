@@ -1,0 +1,6 @@
+AuthUserFile /kunden/homepages/35/d702764997/htdocs/dev/protect.htpasswd
+AuthName "Protect"
+AuthType Basic
+<Limit GET POST>
+require user Viewaccess
+</Limit>
