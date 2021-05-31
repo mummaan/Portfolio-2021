@@ -5,7 +5,7 @@
 
 /************************* Universal CSS ****************************/
 
-$header: imact, ivypresto-headline, serif;
+$header: ivypresto-headline, arial, serif;
 $body: acumin-pro-wide, sans-serif;
 
 .site-wrapper {
@@ -55,6 +55,7 @@ h2 {
 
 h3 {
 	font-size: 3rem;
+	margin-top: 2rem;
 }
 
 h4{
@@ -153,6 +154,12 @@ ul {
 }
 
 
+/* IMAGES */
+
+.img-insurance{
+	background-image: url('../images/main/insurance.png');
+	background-size: cover;
+}
 
 /************************* Mobile ****************************/
 
@@ -165,6 +172,10 @@ ul {
 	margin: 25px;
 }
 
+.navbar{
+	background-color: rgba(255,245,237,0.98);
+}
+
 .navbar-toggler{
 	border: none;
 }
@@ -172,7 +183,7 @@ ul {
 .navbar-name{
 	font-family: $header;
 	font-size: 3.25rem;
-	color: $dark;
+	color: $dk-accent;
 }
 
 .navbar-toggler-icon {
@@ -401,3 +412,132 @@ ul {
 	font-size: 2.5rem;
 	text-decoration: underline;
 }
+
+/************************* Desktop ****************************/
+@media (min-width: 992px) { 
+
+//Text Styles
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+	margin-top: 2rem;
+}
+
+h4{
+	font-family: $body;
+	font-weight: 600;
+	font-size: 1rem;
+	line-height: 3rem;
+}
+
+p, a{
+	font-size: 1rem;
+}
+	
+.badge{
+	font-size: .75rem;
+	font-weight: 400;
+}
+	
+//Navbar
+.img-brand{
+	height: auto;
+	width: 30px;
+	fill: $dk-accent;
+	margin: 15px;
+}
+
+.navbar-brand{
+	padding-left: 20px;
+}	
+	
+.navbar-name{
+	font-family: $header;
+	font-size: 1.5rem;
+	margin: 15px;
+	margin-left: 40px;
+}
+
+.navbar-toggler-icon {
+  	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(164,91,93,1.00)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")!important;
+  	width: 60px;
+	height: 60px;
+	margin: 25px;
+}
+
+
+.nav-item{
+	height: 25px;
+	margin-left: 15px;
+}
+
+a.nav-link{
+	font-size: .85rem!important;
+}
+
+.navbar-nav{
+	margin-bottom: .5rem;
+	margin-right: 40px;
+}
+
+.mt-54{
+	margin-top: 66px;
+}
+
+//Cards
+.card-img-top{
+	height: 250px;	
+} 
+	
+.card-body{
+	height: 175px;
+}
+
+.card-footer{
+	height: auto;
+	padding:  15px;
+	padding-left:  0px;
+}
+	
+.footer-cta{
+	font-size: 1rem!important;
+	.link-icon{
+		font-size: 1rem!important;
+	}
+}
+	
+//Project Page
+	.project-teaser{
+		height: 300px; 
+	}
+	
+	.p-std{
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+	
+	#header-list{
+		li{
+			font-size: 1rem;
+		}
+	}
+	
+	.help-icon, .caption{
+		font-size: .85rem;
+	}
+	
+	.port-number{
+		margin-left: -3%;
+		font-size: 1.5rem;
+	}
+	
+} //End Breakpoint Lg
+
